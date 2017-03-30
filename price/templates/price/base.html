@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    {% block head %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<p><a href="search">Поиск</a>
+{% if user.is_authenticated %}
+<a href="load_price">Загрузить</a></p>
+{% endif %}
+{% block body %}
+{% endblock %}
+</body>
+</html>

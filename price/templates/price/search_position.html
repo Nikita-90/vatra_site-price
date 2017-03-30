@@ -1,0 +1,31 @@
+{% extends "price/base.html" %}
+
+{% block head %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/search_position.css' %}">
+{% endblock %}
+
+{% block title %}Search{% endblock %}
+
+{% block body %}
+
+<form method="post">{% csrf_token %}
+    <input type="text" name="search">
+    <input type="submit" value="Ok">
+    {{ search }}
+    <table>
+        <tr>
+            <th>Наименование</th>
+            <th>Цена с НДС</th>
+            <th>Прайс</th>
+        </tr>
+        {% for position in price %}
+        <tr>
+            <td>{{ position.0 }}</td>
+            <td>{{ position.1 }}</td>
+            <td>{{ position.2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+{% endblock %}

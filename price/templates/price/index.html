@@ -1,0 +1,12 @@
+{% extends "price/base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block body %}
+{{ error }}
+<ul>
+{% for error in errors %}
+    <li>error</li>
+{% endfor %}
+</ul>
+{% endblock %}

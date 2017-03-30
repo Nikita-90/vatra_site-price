@@ -1,0 +1,83 @@
+{% extends "sitevatra/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+ВАТРА - освітлення професійно!
+{% endblock %}
+
+{% block body %}
+
+<img class="logo" src="{% static 'sitevatra/img/logo.png' %}" alt="logo">
+<ul class="top-menu">
+    <li><a href="#">ПОРТФОЛІО</a>
+        <ul>
+            <li><a href="#">ІСТОРІЯ</a></li>
+            <li><a href="#">ВИРОБНИЦТВО</a></li>
+            <li><a href="#">НОВИНИ</a></li>
+            <li><a href="#">ISO9001</a></li>
+        </ul>
+    </li>
+    <li><a href="#">ПРОДУКЦІЯ</a>
+        <ul>
+            <li><a href="#">ВИБУХОЗАХИЩЕНІ</a></li>
+            <li><a href="#">ПРОМИСЛОВІ</a></li>
+            <li><a href="#">ОФІСНІ</a></li>
+            <li><a href="#">ВУЛИЧНІ</a></li>
+            <li><a href="#">ПРОЖЕКТОРИ</a></li>
+            <li><a href="#">ПОСЛУГИ</a></li>
+        </ul>
+    </li>
+    <li><a href="#">ІНФОМАТЕРІАЛИ</a></li>
+    <li ><a href="#">КОНТАКТИ</a>
+        <ul>
+            <li><a href="#">ІСТОРІЯ</a></li>
+            <li><a href="#">ВИРОБНИЦТВО</a></li>
+            <li><a href="#">НОВИНИ</a></li>
+            <li><a href="#">ISO9001</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+<div class="slider">
+<img class="show" src="{% static 'sitevatra/img/slide_UKR_01.jpg' %}">
+<img src="{% static 'sitevatra/img/slide_UKR_02.jpg' %}">
+<img src="{% static 'sitevatra/img/slide_UKR_03.jpg' %}">
+</div>
+
+<div class="www">
+    <p><h3 class="title">ПРОДУКЦІЯ</h3></p>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod111.jpg' %}" alt="111">
+        <p>ІИБУХОЗАХИЩЕНЕ ОСВІТЛЕННЯ<br/>
+            ВИБУХУБЕЗПЕЧНЕ ОСВІТЛЕННЯ<br/></p></a>
+    </div>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod222.jpg' %}" alt="222">
+        <p>ПРОМИСЛОВЕ ОСВІТЛЕННЯ<br/>
+        ІНДУЧТРІАЛЬНЕ ОСВІТЛЕННЯ<br/>
+        ТРАНСПОРТНЕ ОСВІТЛЕННЯ<br/>
+        АГРАРНЕ І ТЕПЛИЧНЕ ОСВІТЛЕННЯ</p></a>
+    </div>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod333.jpg' %}" alt="333">
+        <p>ОФІСНЕ ОСВІТЛЕННЯ<br/>
+        АДМІНІСТРАТИВНЕ ОСВІТЛЕННЯ<br/>
+        ЖКГ ОСВІТЛЕННЯ</p></a>
+    </div>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod444.jpg' %}" alt="444">
+        <p>ВУЛИЧНЕ ОСВІТЛЕННЯ<br/>
+        ЗОВНІШНЄ ОСВІТЛЕННЯ<br/>
+        ДОРОЖГНЕ ОСВІТЛЕННЯ</p></a>
+    </div>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod555.jpg' %}" alt="555">
+        <p>ПРОЖЕКТОРИ</p>
+    </div>
+    <div class="production">
+        <a href="#"><img src="{% static 'sitevatra/img/prod666.jpg' %}" alt="666">
+        <p>ДОДАТКОВІ ПОСЛУГИ</p></a>
+    </div>
+</div>
+{% endblock %}

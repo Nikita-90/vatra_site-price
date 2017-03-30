@@ -1,0 +1,21 @@
+{% extends "price/base.html" %}
+
+{% block title %}Load Price{% endblock %}
+
+
+{% block body %}
+{% if user.is_authenticated %}
+
+
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <input type="file" name="price">
+        <input type="submit" value="Load">
+    </form>
+
+{% else %}
+    <p>Залогиньтесь</p>
+{% endif %}
+
+{% endblock %}
+
+
