@@ -9,23 +9,24 @@
 
 {% block body %}
 
-<form method="post">{% csrf_token %}
+<form method="get">
     <input type="text" name="search">
     <input type="submit" value="Ok">
     {{ search }}
     <table>
         <tr>
-            <th>Наименование</th>
-            <th>Цена с НДС</th>
-            <th>Прайс</th>
+            <th class="name">Наименование</th>
+            <th class="cost">Цена с НДС</th>
+            <th class="price">Прайс</th>
         </tr>
         {% for position in price %}
         <tr>
-            <td>{{ position.0 }}</td>
-            <td>{{ position.1 }}</td>
-            <td>{{ position.2 }}</td>
+            <td class="name">{{ position.0 }}</td>
+            <td class="cost">{{ position.1 }}</td>
+            <td class="price">{{ position.2 }}</td>
         </tr>
         {% endfor %}
     </table>
 </form>
+
 {% endblock %}

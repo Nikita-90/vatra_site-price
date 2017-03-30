@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 import xlrd
+import os
 
 from .models import LoadingFile, Price
 
@@ -23,8 +24,8 @@ def load_price(request):
 
 def search_position(request):
     price = []
-    if request.method == 'POST':
-        search_ = request.POST['search']
+    if len(request.GET) > 0:
+        search_ = request.GET['search']
         search = search_.lower().strip()
         search = option_minus(search)
         for pos in search:
@@ -55,7 +56,8 @@ def save_price_to_db(name, cost, file):
 def proc_file(fname):
     name = []
     cost = []
-    rb = xlrd.open_workbook(fname, formatting_info=True)
+    rb = xlrd.open_workbook(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'media/')+
+                            fname, formatting_info=True)
     nsheet = rb.nsheets
     for n in range(nsheet):
         sheet = rb.sheet_by_index(n)
