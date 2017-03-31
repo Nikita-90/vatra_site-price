@@ -3,8 +3,30 @@ table {
     margin: 1%;
     border: 4px double black;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 td {
     border: 1px solid black;
+}
+
+td.name,
+th.name {
+    width: 45%;
+}
+
+td.cost,
+th.cost {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+td.price,
+th.price {
+    width: 35%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
