@@ -1,0 +1,230 @@
+/* font-family: "CuprumRegular"; */
+@font-face {
+    font-family: "CuprumRegular";
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot");
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumRegular/CuprumRegular.woff") format("woff"),
+    url("../fonts/CuprumRegular/CuprumRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumBold"; */
+@font-face {
+    font-family: "CuprumBold";
+    src: url("../fonts/CuprumBold/CuprumBold.eot");
+    src: url("../fonts/CuprumBold/CuprumBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumBold/CuprumBold.woff") format("woff"),
+    url("../fonts/CuprumBold/CuprumBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumItalic"; */
+@font-face {
+    font-family: "CuprumItalic";
+    src: url("../fonts/CuprumItalic/CuprumItalic.eot");
+    src: url("../fonts/CuprumItalic/CuprumItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumItalic/CuprumItalic.woff") format("woff"),
+    url("../fonts/CuprumItalic/CuprumItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumBoldItalic"; */
+@font-face {
+    font-family: "CuprumBoldItalic";
+    src: url("../fonts/CuprumBoldItalic/CuprumBoldItalic.eot");
+    src: url("../fonts/CuprumBoldItalic/CuprumBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumBoldItalic/CuprumBoldItalic.woff") format("woff"),
+    url("../fonts/CuprumBoldItalic/CuprumBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1, h3, p {
+    font-family: "CuprumRegular";
+}
+
+
+.col {
+    width: 550pt;
+    
+    margin: 0 auto;  
+    border-radius: 10pt;
+    
+}
+
+.left-part {
+    background-color: #5771ad;
+    border-top-left-radius: 10pt;
+    border-bottom-left-radius: 10pt;
+    width: 40%;
+    float: left;
+}
+
+.right-part {
+    background-color: #e8e8d5;
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 0pt;
+    border-top-right-radius: 10pt;
+    border-bottom-right-radius: 10pt;
+}
+
+.floor {
+    height: 20pt;
+}
+
+.left-part,
+.right-part {
+    display: inline-block;
+}
+
+.photo {
+    width: 135pt;
+    height: 135pt;
+    border-radius: 135pt;
+    margin: 20pt; 
+}
+
+h1.name {
+    margin-left: 15pt;
+}
+
+h3.birthday,
+h1.bigred {
+    font-weight: normal;
+}
+
+h3.birthday,
+h1.bigred {
+    margin-left: 10pt;
+}
+
+h3.birthday,
+h1.name {
+    color: #fcf4e1;
+    text-transform: capitalize;
+}
+
+h1.bigred {
+    color: #800000;
+    margin-bottom: -5pt;
+    text-transform: uppercase;
+}
+
+.left-part p.info,
+.left-part p.info a {
+    color: #fcf4e1;    
+}
+
+.left-part img.spray {
+    margin: 5pt 10pt;
+}
+
+.left-part p.info {
+    margin-left: 3pt;
+    width: 60%;
+    display: inline-block;
+    vertical-align: 22pt;
+    word-wrap: break-word;
+}
+
+.right-part p {
+    color: #424141;
+    font-family: "CuprumBold";
+}
+
+.right-part p.info {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 60%;
+    word-wrap: break-word;
+    vertical-align: 27pt;
+    color: #666262;
+    font-size: 16pt;
+    font-family: "CuprumBold";  
+}
+
+.right-part p.info a {
+    color: #666262;
+}
+
+.right-part img.spray {
+    margin: 10pt 10pt 10pt 30pt;
+}
+
+#info1,
+#date {
+    width: 40%;
+    float: left;
+    margin-left: 15pt;
+    margin-right: 25pt;
+    font-size: 13pt;
+}
+
+#info2 {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 40%;
+}
+
+#info3 {
+    color: #857d7d;
+}
+
+#date {
+    font-size: 10pt;
+    color: #f71111;
+}
+
+.title,
+.lng {
+    clear: both;
+}
+
+.course {
+    height: 40pt;
+    width: 40pt;
+    border-radius: 40pt;
+    display: inline-block;
+    float: left;
+    margin-left: 20pt;
+    margin-right: 3pt;
+}
+
+.course1 {
+    width: 40%;
+    display: inline-block;
+}
+
+p.skills {
+    display: inline-block;
+    background-color: #6fe3d7;
+    border-radius: 4pt;
+    margin-left: 10pt;
+    font-size: 15pt;
+    color: #3d3838;
+    margin-bottom: 0pt;
+    margin-top: 10pt;
+    padding: 5pt 10pt;
+}
+
+.lng {
+    margin-top: 20pt;
+    margin-left: 20pt
+}
+
+.lng p {
+    color: #424141;
+    display: inline-block;
+    vertical-align: 12pt;
+}
+
+p.dev {
+    margin-left: 5pt;
+    margin-right: 15pt;
+    text-align: justify;
+}
+
+p.dev a {
+    color: #121111;
+}

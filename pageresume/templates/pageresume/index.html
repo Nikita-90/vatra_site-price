@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'pageresume/css/index.css' %}">
+    <script type="text/javascript" src="{% static 'pageresume/js/jquery-3.2.0.min.js' %}" defer></script>
+       
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body {
+    background-image: url("{% static 'pageresume/img/back.jpg' %}");
+}
+    </style>
+</head>
+<body>
+
+<main class="col">
+
+    <div class="left-part">
+        <img class="photo" src="{% static 'pageresume/img/photo2.jpg' %}" alt="photo">
+        <h1 class="name">Никита Бойко</h1>
+        <h1 class="bigred">Дата рождения</h1>
+        <h3 class="birthday">22.11.1990</h3>
+        
+        <img class="spray email" src="{% static 'pageresume/img/email.png' %}" alt="email">
+        <p class="info email">boyko.nikita@gmail.com</p>
+        
+        <img class="spray phone" src="{% static 'pageresume/img/phone.png' %}" alt="phone">
+        <p class="info phone">+38 063 470 58 17</p>
+        
+        <img class="spray address" src="{% static 'pageresume/img/address.png' %}" alt="address">
+        <p class="info address">г. Киев, ул. Урловская, 4</p>
+        
+        <img class="spray github" src="{% static 'pageresume/img/github.png' %}" alt="github">
+        <p class="info github"><a href="https://github.com/Nikita-90" target="_blank">github.com/Nikita-90</a></p>        
+    
+    <div class="floor">  
+    </div>  
+    </div>
+    
+    <div class="right-part">
+        
+        <div class="title">
+            <img class="spray job" src="{% static 'pageresume/img/job.png' %}" alt="job">
+            <p class="info job">Опыт работы</p>
+        </div>
+        <p id="info1">ТОВ "ЮГСВЕТ"</p>
+        <p id="date">01.04.2013</p>
+        <div id="info2">
+            <p>Менеджер по продажам</p>
+            <p id="info3">Работа с клиентом от первого звонка/встречи и до последней подписанной накладной.</p>
+        </div>
+        
+        <div class="title">
+            <img class="spray education" src="{% static 'pageresume/img/education.png' %}" alt="education">
+            <p class="info education">Образование</p>
+        </div>
+            <p id="info1">Национальный технический университет Украины "Киевский политехнический институт" (НТУУ "КПИ")</p>
+                <p id="info2">Инженер электрик</p>
+          
+        <div class="title">    
+            <img class="spray course" src="{% static 'pageresume/img/bedge.png' %}" alt="course">
+            <p class="info courses"><a href="https://itea.ua/" target="_blank">Курсы ITEA</a></p>
+        </div>
+        <div class="course1">
+            <img class="course" src="{% static 'pageresume/img/python-2-min-150x150.png' %}" alt="course1">
+            <p>Продвинутый курс Python</p>
+        </div>
+        <div class="course1">
+            <img class="course" src="{% static 'pageresume/img/python-2-min-150x150.png' %}" alt="course2">
+            <p>Базовый курс Python</p>
+        </div>
+        
+        <h1 class="bigred">Навыки и умения</h1>
+        <p class="skills">Python3</p>
+        <p class="skills">Django</p>
+        <p class="skills">SQLite</p>
+        <p class="skills">Git</p>
+        <p class="skills">Linux</p>
+        <p class="skills">HTML</p>
+        <p class="skills">CSS</p>
+        
+        <div class="lng">
+            <img src="{% static 'pageresume/img/cv-en.png' %}" alt="lng">
+            <p class="info1">Pre-intermediate</p>
+        </div>
+        
+        <h1 class="bigred">Примеры работ</h1>
+        <ul>
+            <li>
+                <p class="dev"><a href="http://nikita90.pythonanywhere.com/vatra/" target="_blank">nikita90.pythonanywhere.com/vatra/</a> – небольшая страничка, где были использованы технологии HTML, CSS, JQUERY, JS.</p>
+            </li>
+            <li>
+                <p class="dev"><a href="http://nikita90.pythonanywhere.com/search" target="_blank">nikita90.pythonanywhere.com/search</a> – страница поиска позиций из загруженных прайсов (загрузка возможна только для авторизированного пользователя). Вводим часть названия товара, например НСП11 (или НСП 11, или НСП-11) и видим все результаты (тоесть и слитно, и через пробел, и со знаком «-»). Используемые технологии: Python, Django, SQLite.</p>
+            </li>
+            <li>
+                <p class="dev"><a href="#">nikita90.pythonanywhere.com/resume/</a> – резюме. Используемые технологии: HTML, CSS, JQUERY, JS.</p>
+            </li>
+        </ul>
+    <div class="floor">  
+    </div>  
+    </div>
+    
+   
+</main>
+
+<script type="text/javascript" src="{% static 'pageresume/js/index.js' %}" defer></script>
+</body>
+</html>
+
